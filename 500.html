@@ -1,1 +1,65 @@
 <!-- in soviet russia, error handle YOU -->
+
+<html>
+
+  <head>
+      <title>500 Error</title>
+      <script src="code.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <p id="error">500 Error: Internal server error</p>
+
+    <div class="captioned" id="1">
+      <img class="image" src="images/500/bear-cavalry.png">
+      <p class="text">"In Soviet Russia, error handles YOU!"</p>
+    </div>
+
+    <div class="captioned" id="2">
+      <img class="image" src="images/500/codercat.jpg">
+      <p class="text">Something's broken on our end - we'll get right on it!</p>
+    </div>
+
+    <div class="captioned" id="3">
+      <img class="image" src="images/500/constructocat2.jpg">
+      <p class="text">We managed to drop the server... It'll be fine in a while I'm sure</p>
+    </div>
+
+    <div class="captioned" id="4">
+      <img class="image" src="images/500/femalecodertocat.png">
+      <p class="text">Yeah, something's up - we'll get right on it!</p>
+    </div>
+
+    <div class="captioned" id="5">
+      <img class="image" src="images/500/front-end-conftocat.png">
+      <p class="text">That's not good - try again later?</p>
+    </div>
+	
+	<div class="captioned" id="6">
+      <img class="image" src="images/500/inspectocat.jpg">
+      <p class="text">I'm on the hunt for a rogue bug - got any clues?</p>
+    </div>
+	
+	<div class="captioned" id="7">
+      <img class="image" src="images/500/supportcat.png">
+      <p class="text">Need a hand? look <a href="https://help.github.com/categories/github-pages-basics/">here</a></p>
+    </div>
+
+    <footer>
+      <span><a href=""><i class="fa fa-terminal fa-lg" aria-hidden="true"></i></a></span>
+      <span><a href=""><i class="fa fa-life-ring fa-lg" aria-hidden="true"></i></a></span>
+      <span><a href=""><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i></a></span>
+    </footer>
+
+  </body>
+
+  <script>
+    var index = getRandomInt(1,7);
+    var image = document.getElementById(index.toString());
+    image.style.display = "block";
+  </script>
+
+</html>

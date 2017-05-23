@@ -1,12 +1,55 @@
 <!-- somethings wrong, and its probably YOUR fault -->
+
 <html>
 
   <head>
-    
+      <title>400 Error</title>
+      <script src="code.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="style.css">
   </head>
 
   <body>
 
+    <p id="error">400 Error: Bad request</p>
+
+    <div class="captioned" id="1">
+      <img class="image" src="images/400/bear-cavalry.png">
+      <p class="text">"In Soviet Russia - errors handle YOU!"</p>
+    </div>
+
+    <div class="captioned" id="2">
+      <img class="image" src="images/400/codercat.jpg">
+      <p class="text">Have you tried turning it off and on again?</p>
+    </div>
+
+    <div class="captioned" id="3">
+      <img class="image" src="images/400/femalecodertocat.png">
+      <p class="text">Welp, somethings broken - maybe try reloading?</p>
+    </div>
+
+    <div class="captioned" id="4">
+      <img class="image" src="images/400/front-end-conftocat.png">
+      <p class="text">Well, it worked when <i>I</i> tested it</p>
+    </div>
+
+    <div class="captioned" id="5">
+      <img class="image" src="images/400/heisencat.png">
+      <p class="text">"Breaking Bad".. heh, geddit?</p>
+    </div>
+
+    <footer>
+      <span><a href=""><i class="fa fa-terminal fa-lg" aria-hidden="true"></i></a></span>
+      <span><a href=""><i class="fa fa-life-ring fa-lg" aria-hidden="true"></i></a></span>
+      <span><a href=""><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i></a></span>
+    </footer>
+
   </body>
+
+  <script>
+    var index = getRandomInt(1,5);
+    var image = document.getElementById(index.toString());
+    image.style.display = "block";
+  </script>
 
 </html>

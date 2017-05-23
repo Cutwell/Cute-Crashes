@@ -1,2 +1,56 @@
 <!-- unauthorised access *BEEP* activating emergency protocol *BOOP* -->
-"Matter of internal security - the age old cry of the oppressor"
+
+
+<html>
+
+  <head>
+      <title>401 Error</title>
+      <script src="code.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <p id="error">401 Error: Unauthorised</p>
+
+    <div class="captioned" id="1">
+      <img class="image" src="images/401/jean-luc-picat.jpg">
+      <p class="text">"Matter of internal security - the age old cry of the oppressor"</p>
+    </div>
+
+    <div class="captioned" id="2">
+      <img class="image" src="images/401/dojocat.jpg">
+      <p class="text">Gou ni itte wa, gou ni shitagae -- "Entering the village, obey the village " </p>
+    </div>
+
+    <div class="captioned" id="3">
+      <img class="image" src="images/401/steroidtocat.png">
+      <p class="text">'Fraid I can't let you in buddy</p>
+    </div>
+
+    <div class="captioned" id="4">
+      <img class="image" src="images/401/bouncercat.png">
+      <p class="text">Back of the line pal</p>
+    </div>
+
+    <div class="captioned" id="5">
+      <img class="image" src="images/401/stormtroopocat.png">
+      <p class="text">"Hey! These ‘login-credentials’ are just two comlinks tied together! I hate when this happens to me."</p>
+    </div>
+
+    <footer>
+      <span><a href=""><i class="fa fa-terminal fa-lg" aria-hidden="true"></i></a></span>
+      <span><a href=""><i class="fa fa-life-ring fa-lg" aria-hidden="true"></i></a></span>
+      <span><a href=""><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i></a></span>
+    </footer>
+
+  </body>
+
+  <script>
+    var index = getRandomInt(1,5);
+    var image = document.getElementById(index.toString());
+    image.style.display = "block";
+  </script>
+
+</html>

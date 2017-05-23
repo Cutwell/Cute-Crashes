@@ -1,1 +1,45 @@
 <!-- forbidden error -->
+
+<html>
+
+  <head>
+      <title>403 Error</title>
+      <script src="code.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <p id="error">403 Error: Forbidden</p>
+
+    <div class="captioned" id="1">
+      <img class="image" src="images/401/bouncercat.png">
+      <p class="text">This is back-stage friend - you're not getting back here on my watch</p>
+    </div>
+
+    <div class="captioned" id="2">
+      <img class="image" src="images/401/dojocat.jpg">
+      <p class="text">neko ni katsuobushi -- Never let your guard down </p>
+    </div>
+
+    <div class="captioned" id="3">
+      <img class="image" src="images/401/steroidtocat.png">
+      <p class="text">Oi! You're not supposed to be back here!</p>
+    </div>
+
+    <footer>
+      <span><a href=""><i class="fa fa-terminal fa-lg" aria-hidden="true"></i></a></span>
+      <span><a href=""><i class="fa fa-life-ring fa-lg" aria-hidden="true"></i></a></span>
+      <span><a href=""><i class="fa fa-code-fork fa-lg" aria-hidden="true"></i></a></span>
+    </footer>
+
+  </body>
+
+  <script>
+    var index = getRandomInt(1,3);
+    var image = document.getElementById(index.toString());
+    image.style.display = "block";
+  </script>
+
+</html>
