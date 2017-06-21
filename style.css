@@ -1,9 +1,11 @@
-body, html { height: 100%; width: 100%; overflow: hidden; font-family: "Courier New", Courier, Helvetica, Arial, sans-serif;}
+body, html {height: 100%; width: 100%; overflow: hidden; font-family: "Courier New", Courier, Helvetica, Arial, sans-serif;}
 footer {position: absolute; right: 0; bottom: 0; left: 0; padding: 5px; margin: 5px;}
-a,a:active,a:focus,a:hover,a:visited {text-decoration:none; color:#000000;}
 
 .captioned {display: none; height: 500px; width: 100%;}
 .image {height: 350px; width: 350px; margin: auto; display: block;}
 .text {text-align: center;}
 
+.external,.external:active,.external:focus,.external:hover,.external:visited {text-decoration: none; color: #000000;}
 #error {text-align: center; font-family: "Courier New", Courier, Helvetica, Arial, sans-serif; font-size: 40px;}
+#suggested {width: 100%; text-align: center; margin-bottom: 50px;}
+#internal {text-decoration: underline; color: #0000EE;}
