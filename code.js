@@ -6,17 +6,4 @@ function editDistance(a,b){a=a.toLowerCase(),b=b.toLowerCase();for(var c=new Arr
 
 function getClosestMatch(a){var b=window.location.href,c=0,d="";for(pageref in a){var e=similarity(b,pageref);top_match<e&&(c=e,d=pageref)}return d}
 
-function getClosestMatch(){
-  var current = window.location.href;
-  var page =""; //array loaded from pageref.txt
-  var top_match = "";
-  var top_match_score = 0;
-  for (pageref in page){
-    var score = similarity(current, pageref);
-    if (score > top_match_score){
-      top_match_score = score
-      top_match = pageref
-    }
-  }
-  return top_match
-}
+function getClosestMatch(){var e=window.location.href;console.log(e);require("fs").readFileSync("pageref.txt");var r=text.split("\n"),t="",a=0;for(pageref in r){var i=similarity(e,pageref);i>a&&(a=i,t=pageref)}return t}
